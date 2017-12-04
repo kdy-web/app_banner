@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="full-screen" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/app_banner.css"/>
+		<title></title>
+	<script type="text/javascript">
+		function refresh() {
+			var deviceWidth = document.documentElement.clientWidth;
+			if(deviceWidth > 750) {
+				document.documentElement.style.fontSize = 750 / 7.5 + "px";
+
+			} else {
+				document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
+			}
+		}
+		refresh();
+		window.onresize = function() {
+			refresh();
+		}
+	</script>
+	</head>
+	<body>
+		<div id="img_box" style=" background: url(img/banner1.png) no-repeat;background-size:100%;">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		console.log()
+		document.getElementById("img_box").style.height=document.documentElement.clientHeight+"px";
+	</script>
+</html>
